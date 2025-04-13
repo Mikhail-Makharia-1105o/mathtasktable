@@ -4,8 +4,6 @@ import parseCSV from './parseCSV.js';
 const data = readFileSync('./table1.csv').toString();
 const [headers, table] = parseCSV(data);
 
-// Для референса:
-
 function warshall(table, headers) {
     // Количество вершин в графе
     const n = headers.length;
